@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apolo Digital — Agencia de Marketing Digital que Multiplica tus Resultados</title>
+<meta name="description" content="Apolo Digital es una agencia de marketing digital especializada en SEO, publicidad en redes y estrategia de crecimiento. Convertimos tráfico en clientes reales. Solicita tu diagnóstico gratuito.">
+<meta name="keywords" content="agencia de marketing digital, seo, publicidad redes sociales, growth marketing, diseño web, estrategia digital">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://apolodigital.agency/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Apolo Digital — Marketing que Multiplica Resultados">
+<meta property="og:description" content="Estrategia, contenido y publicidad pagada trabajando juntos para hacer crecer tu negocio. Descubre cómo en una llamada gratuita de 30 minutos.">
+<meta property="og:url" content="https://apolodigital.agency/">
+<meta property="og:site_name" content="Apolo Digital">
+<meta property="og:locale" content="es_ES">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Apolo Digital — Marketing que Multiplica Resultados">
+<meta name="twitter:description" content="Agencia de marketing digital especializada en SEO, publicidad y growth. Diagnóstico gratuito en 30 minutos.">
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MarketingAgency",
+  "name": "Apolo Digital",
+  "url": "https://apolodigital.agency/",
+  "description": "Agencia de marketing digital especializada en SEO, publicidad en redes sociales y estrategia de crecimiento para pymes y startups.",
+  "areaServed": "ES",
+  "priceRange": "€€",
+  "sameAs": [
+    "https://www.linkedin.com/company/apolodigital",
+    "https://www.instagram.com/apolodigital"
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg: #060b18;
+    --bg-alt: #0a1428;
+    --surface: #101d3a;
+    --surface-2: #16294e;
+    --border: rgba(255,255,255,0.08);
+    --text: #f2f2f7;
+    --text-dim: #a3a3b8;
+    --accent: #d4af37;
+    --accent-2: #1d4ed8;
+    --gradient: linear-gradient(135deg,#1d4ed8 0%,#3667d6 45%,#d4af37 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(29,78,216,0.16), rgba(212,175,55,0.16));
+    --radius: 18px;
+    --shadow: 0 20px 60px -20px rgba(0,0,0,0.6);
+    --maxw: 1180px;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit; text-decoration:none;}
+  ul{list-style:none;}
+  .container{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  section{position:relative;}
+
+  h1,h2,h3,h4{font-family:'Sora', 'Inter', sans-serif; font-weight:700; letter-spacing:-0.02em; line-height:1.15;}
+  h1{font-size:clamp(2.6rem, 6vw, 4.6rem);}
+  h2{font-size:clamp(1.9rem, 4vw, 2.9rem);}
+  h3{font-size:1.25rem;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.78rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:16px;
+  }
+  .eyebrow::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--gradient);}
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:10px;
+    padding:15px 28px; border-radius:100px; font-weight:600; font-size:0.95rem;
+    border:1px solid transparent; cursor:pointer; transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--gradient); color:#fff; box-shadow:0 10px 30px -8px rgba(212,175,55,0.55);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 16px 36px -8px rgba(212,175,55,0.7);}
+  .btn-ghost{border-color:var(--border); color:var(--text); background:rgba(255,255,255,0.02);}
+  .btn-ghost:hover{background:rgba(255,255,255,0.06); transform:translateY(-2px);}
+  .btn-sm{padding:10px 20px; font-size:0.85rem;}
+
+  /* NAV */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(6,11,24,0.7); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+    border-bottom:1px solid var(--border);
+  }
+  nav{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:var(--maxw); margin:0 auto;}
+  .logo{display:flex; align-items:center; gap:10px; font-family:'Sora',sans-serif; font-weight:700; font-size:1.15rem;}
+  .logo-mark{width:34px; height:34px; border-radius:9px; background:var(--gradient); display:flex; align-items:center; justify-content:center; font-weight:800; color:#fff;}
+  .nav-links{display:flex; align-items:center; gap:34px;}
+  .nav-links a{font-size:0.92rem; color:var(--text-dim); transition:color .2s;}
+  .nav-links a:hover{color:var(--text);}
+  .nav-cta{display:flex; align-items:center; gap:16px;}
+  .burger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none;}
+  .burger span{width:22px; height:2px; background:var(--text);}
+
+  /* HERO */
+  .hero{padding:170px 0 110px; position:relative;}
+  .hero::before{
+    content:""; position:absolute; top:-200px; right:-200px; width:600px; height:600px;
+    background:radial-gradient(circle, rgba(212,175,55,0.25), transparent 65%); filter:blur(20px); z-index:-1;
+  }
+  .hero::after{
+    content:""; position:absolute; bottom:-260px; left:-220px; width:600px; height:600px;
+    background:radial-gradient(circle, rgba(29,78,216,0.22), transparent 65%); filter:blur(20px); z-index:-1;
+  }
+  .hero-grid{display:grid; grid-template-columns:1.15fr 0.85fr; gap:60px; align-items:center;}
+  .hero h1{margin-bottom:22px;}
+  .hero h1 .gradient-text{background:var(--gradient); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .hero p.lead{font-size:1.15rem; color:var(--text-dim); max-width:520px; margin-bottom:34px;}
+  .hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:46px;}
+  .hero-trust{display:flex; gap:28px; flex-wrap:wrap;}
+  .hero-trust div{font-size:0.82rem; color:var(--text-dim);}
+  .hero-trust strong{display:block; font-family:'Sora',sans-serif; font-size:1.5rem; color:var(--text);}
+
+  .hero-visual{position:relative;}
+  .mock-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:26px; box-shadow:var(--shadow);
+  }
+  .mock-card + .mock-card{margin-top:18px;}
+  .mock-header{display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;}
+  .mock-header span{font-size:0.8rem; color:var(--text-dim);}
+  .mock-bar{height:10px; border-radius:6px; background:var(--surface-2); overflow:hidden; margin-bottom:10px;}
+  .mock-bar i{display:block; height:100%; background:var(--gradient); border-radius:6px;}
+  .float-badge{
+    position:absolute; top:-22px; right:-22px; background:var(--gradient); color:#fff;
+    padding:12px 18px; border-radius:14px; font-weight:700; font-size:0.85rem; box-shadow:0 14px 30px -10px rgba(212,175,55,0.6);
+    display:flex; align-items:center; gap:8px;
+  }
+
+  /* LOGOS */
+  .logos{padding:50px 0; border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+  .logos p{text-align:center; font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-dim); margin-bottom:28px;}
+  .logo-row{display:flex; justify-content:space-between; align-items:center; gap:24px; flex-wrap:wrap; opacity:0.65;}
+  .logo-row span{font-family:'Sora',sans-serif; font-weight:700; font-size:1.15rem; color:var(--text-dim);}
+
+  /* SECTION HEAD */
+  .section-head{max-width:640px; margin:0 auto 56px; text-align:center;}
+  .section-head p{color:var(--text-dim); font-size:1.05rem; margin-top:14px;}
+  section.pad{padding:110px 0;}
+
+  /* SERVICES */
+  .services-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:22px;}
+  .service-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:32px; transition:transform .3s ease, border-color .3s ease;
+  }
+  .service-card:hover{transform:translateY(-6px); border-color:rgba(212,175,55,0.4);}
+  .service-icon{
+    width:50px; height:50px; border-radius:14px; background:var(--gradient-soft);
+    display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+  }
+  .service-icon svg{width:24px; height:24px; stroke:var(--accent);}
+  .service-card h3{margin-bottom:10px;}
+  .service-card p{color:var(--text-dim); font-size:0.95rem; margin-bottom:16px;}
+  .service-card .tag-list{display:flex; flex-wrap:wrap; gap:8px;}
+  .service-card .tag-list span{font-size:0.75rem; padding:5px 10px; border-radius:100px; background:var(--surface-2); color:var(--text-dim);}
+
+  /* PROCESS */
+  .process{background:var(--bg-alt);}
+  .process-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px; counter-reset:step;}
+  .process-step{position:relative; padding:30px 24px 24px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);}
+  .process-step .num{
+    font-family:'Sora',sans-serif; font-weight:800; font-size:2.4rem; background:var(--gradient);
+    -webkit-background-clip:text; background-clip:text; color:transparent; margin-bottom:12px; display:block;
+  }
+  .process-step h3{font-size:1.05rem; margin-bottom:8px;}
+  .process-step p{color:var(--text-dim); font-size:0.88rem;}
+  .process-line{position:absolute; top:44px; right:-20px; width:20px; height:2px; background:var(--border);}
+
+  /* CASE STUDIES */
+  .cases-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .case-card{
+    border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); background:var(--surface);
+    transition:transform .3s ease;
+  }
+  .case-card:hover{transform:translateY(-6px);}
+  .case-thumb{
+    height:170px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden;
+  }
+  .case-thumb span.tag{
+    position:absolute; top:14px; left:14px; background:rgba(11,11,20,0.55); backdrop-filter:blur(6px);
+    padding:5px 12px; border-radius:100px; font-size:0.72rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase;
+  }
+  .case-thumb svg{width:64px; height:64px; opacity:0.9;}
+  .case-body{padding:24px;}
+  .case-body h3{margin-bottom:8px;}
+  .case-body p{color:var(--text-dim); font-size:0.9rem; margin-bottom:18px;}
+  .case-stats{display:flex; gap:22px; border-top:1px solid var(--border); padding-top:16px;}
+  .case-stats div strong{display:block; font-family:'Sora',sans-serif; font-size:1.3rem;}
+  .case-stats div span{font-size:0.72rem; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.05em;}
+
+  /* STATS BAND */
+  .stats-band{
+    background:var(--gradient); border-radius:26px; padding:56px 40px; display:grid;
+    grid-template-columns:repeat(4,1fr); gap:20px; text-align:center; color:#fff;
+  }
+  .stats-band div strong{display:block; font-family:'Sora',sans-serif; font-size:2.6rem; font-weight:800;}
+  .stats-band div span{font-size:0.85rem; opacity:0.9;}
+
+  /* TESTIMONIALS */
+  .testimonials-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .testimonial-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:28px;}
+  .stars{color:#e8c766; font-size:0.9rem; margin-bottom:14px; letter-spacing:2px;}
+  .testimonial-card p.quote{font-size:0.98rem; color:var(--text); margin-bottom:22px;}
+  .testimonial-author{display:flex; align-items:center; gap:12px;}
+  .avatar{
+    width:42px; height:42px; border-radius:50%; background:var(--gradient); display:flex; align-items:center;
+    justify-content:center; font-weight:700; font-size:0.9rem; color:#fff; flex-shrink:0;
+  }
+  .testimonial-author strong{display:block; font-size:0.88rem;}
+  .testimonial-author span{font-size:0.78rem; color:var(--text-dim);}
+
+  /* PRICING */
+  .pricing-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:stretch;}
+  .price-card{background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:34px; display:flex; flex-direction:column;}
+  .price-card.featured{border-color:transparent; background:linear-gradient(var(--surface),var(--surface)) padding-box, var(--gradient) border-box; border-width:2px; border-style:solid; position:relative;}
+  .price-card.featured::before{
+    content:"MÁS ELEGIDO"; position:absolute; top:-13px; left:50%; transform:translateX(-50%);
+    background:var(--gradient); color:#fff; font-size:0.68rem; font-weight:700; letter-spacing:0.06em;
+    padding:5px 14px; border-radius:100px;
+  }
+  .price-card h3{margin-bottom:6px;}
+  .price-card .price{font-family:'Sora',sans-serif; font-size:2.4rem; font-weight:800; margin:14px 0 6px;}
+  .price-card .price span{font-size:0.95rem; color:var(--text-dim); font-weight:400;}
+  .price-card p.desc{color:var(--text-dim); font-size:0.88rem; margin-bottom:22px;}
+  .price-card ul{margin-bottom:26px; flex:1;}
+  .price-card ul li{display:flex; gap:10px; font-size:0.88rem; color:var(--text-dim); margin-bottom:12px; align-items:flex-start;}
+  .price-card ul li svg{width:16px; height:16px; stroke:var(--accent); flex-shrink:0; margin-top:2px;}
+  .price-card .btn{width:100%;}
+
+  /* FAQ */
+  .faq-list{max-width:760px; margin:0 auto; display:flex; flex-direction:column; gap:14px;}
+  .faq-item{background:var(--surface); border:1px solid var(--border); border-radius:14px; overflow:hidden;}
+  .faq-q{
+    display:flex; justify-content:space-between; align-items:center; padding:20px 24px; cursor:pointer;
+    font-weight:600; font-size:0.98rem;
+  }
+  .faq-q svg{width:18px; height:18px; stroke:var(--text-dim); transition:transform .3s ease; flex-shrink:0;}
+  .faq-item.open .faq-q svg{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .3s ease;}
+  .faq-a p{padding:0 24px 20px; color:var(--text-dim); font-size:0.9rem;}
+  .faq-item.open .faq-a{max-height:220px;}
+
+  /* CTA */
+  .cta-section{
+    background:var(--surface); border:1px solid var(--border); border-radius:28px; padding:70px 40px; text-align:center;
+    position:relative; overflow:hidden;
+  }
+  .cta-section::before{
+    content:""; position:absolute; inset:0; background:var(--gradient-soft); opacity:0.5;
+  }
+  .cta-section > *{position:relative;}
+  .cta-section h2{margin-bottom:16px;}
+  .cta-section p{color:var(--text-dim); max-width:500px; margin:0 auto 32px;}
+  .cta-actions{display:flex; gap:16px; justify-content:center; flex-wrap:wrap;}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--border); padding:70px 0 30px; background:var(--bg-alt);}
+  .footer-grid{display:grid; grid-template-columns:1.4fr repeat(3,1fr); gap:40px; margin-bottom:50px;}
+  .footer-brand p{color:var(--text-dim); font-size:0.9rem; margin:16px 0 20px; max-width:280px;}
+  .footer-social{display:flex; gap:12px;}
+  .footer-social a{
+    width:36px; height:36px; border-radius:10px; background:var(--surface); border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center; transition:background .2s;
+  }
+  .footer-social a:hover{background:var(--surface-2);}
+  .footer-social svg{width:16px; height:16px; stroke:var(--text-dim);}
+  .footer-col h4{font-size:0.85rem; margin-bottom:18px; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.06em;}
+  .footer-col ul li{margin-bottom:12px;}
+  .footer-col ul li a{font-size:0.9rem; color:var(--text-dim); transition:color .2s;}
+  .footer-col ul li a:hover{color:var(--text);}
+  .footer-bottom{
+    border-top:1px solid var(--border); padding-top:26px; display:flex; justify-content:space-between;
+    flex-wrap:wrap; gap:12px; font-size:0.8rem; color:var(--text-dim);
+  }
+
+  /* SCROLL TOP */
+  .scroll-top{
+    position:fixed; bottom:26px; right:26px; width:46px; height:46px; border-radius:50%;
+    background:var(--gradient); display:flex; align-items:center; justify-content:center; cursor:pointer;
+    box-shadow:0 10px 26px -8px rgba(212,175,55,0.6); opacity:0; pointer-events:none; transition:opacity .3s ease, transform .3s ease;
+    z-index:90; border:none;
+  }
+  .scroll-top.show{opacity:1; pointer-events:auto;}
+  .scroll-top svg{width:18px; height:18px; stroke:#fff;}
+
+  [data-animate]{opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease;}
+  [data-animate].in-view{opacity:1; transform:translateY(0);}
+
+  @media (max-width: 980px){
+    .hero-grid{grid-template-columns:1fr; gap:50px;}
+    .services-grid, .cases-grid, .testimonials-grid, .pricing-grid{grid-template-columns:repeat(2,1fr);}
+    .process-grid{grid-template-columns:repeat(2,1fr);}
+    .stats-band{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:repeat(2,1fr);}
+    .process-line{display:none;}
+  }
+  @media (max-width: 700px){
+    .nav-links, .nav-cta .btn-ghost{display:none;}
+    .burger{display:flex;}
+    .services-grid, .cases-grid, .testimonials-grid, .pricing-grid, .process-grid{grid-template-columns:1fr;}
+    .hero{padding:150px 0 80px;}
+    .stats-band{grid-template-columns:repeat(2,1fr); padding:40px 24px;}
+    .footer-grid{grid-template-columns:1fr;}
+    section.pad{padding:80px 0;}
+    .logo-row{justify-content:center;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#top" class="logo">
+      <span class="logo-mark">A</span>
+      Apolo Digital
+    </a>
+    <div class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#casos">Casos de éxito</a>
+      <a href="#precios">Planes</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="nav-cta">
+      <a href="#contacto" class="btn btn-ghost btn-sm">Iniciar sesión</a>
+      <a href="#contacto" class="btn btn-primary btn-sm">Diagnóstico gratis</a>
+    </div>
+    <button class="burger" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div data-animate>
+        <p class="eyebrow">Agencia de Marketing Digital</p>
+        <h1>Convertimos tráfico en <span class="gradient-text">clientes reales</span></h1>
+        <p class="lead">SEO, publicidad en redes y estrategia de contenido trabajando como un solo equipo. Sin promesas vacías: reportes claros y resultados que se ven en tu facturación.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Solicitar diagnóstico gratuito</a>
+          <a href="#casos" class="btn btn-ghost">Ver casos de éxito</a>
+        </div>
+        <div class="hero-trust">
+          <div><strong>+120</strong>marcas acompañadas</div>
+          <div><strong>4.9/5</strong>valoración media</div>
+          <div><strong>+38%</strong>tráfico orgánico medio en 6 meses</div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate>
+        <div class="float-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg>
+          +214% ROI en 90 días
+        </div>
+        <div class="mock-card">
+          <div class="mock-header"><span>Tráfico orgánico</span><span>Últimos 30 días</span></div>
+          <div class="mock-bar"><i style="width:88%"></i></div>
+          <div class="mock-bar"><i style="width:64%"></i></div>
+          <div class="mock-bar"><i style="width:74%"></i></div>
+        </div>
+        <div class="mock-card">
+          <div class="mock-header"><span>Conversión por campaña</span><span>Ads + SEO</span></div>
+          <div class="mock-bar"><i style="width:52%"></i></div>
+          <div class="mock-bar"><i style="width:91%"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS -->
+  <section class="logos">
+    <div class="container">
+      <p>Marcas que confían en nosotros</p>
+      <div class="logo-row">
+        <span>NORTIA</span><span>Kaelo</span><span>Vivaro</span><span>Pixel&amp;Co</span><span>Lumen Store</span><span>Bruma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="pad" id="servicios">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <p class="eyebrow">Qué hacemos</p>
+        <h2>Servicios pensados para crecer, no solo para "estar presente"</h2>
+        <p>Cada servicio se conecta con el resto. Nada de acciones sueltas: todo suma a un mismo objetivo, tu crecimiento.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-animate>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+          <h3>SEO &amp; Contenido</h3>
+          <p>Posicionamiento orgánico con investigación de keywords, arquitectura web y contenido que responde a la intención real de búsqueda.</p>
+          <div class="tag-list"><span>SEO técnico</span><span>Link building</span><span>Blog estratégico</span></div>
+        </div>
+
+        <div class="service-card" data-animate>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg></div>
+          <h3>Publicidad de pago (Ads)</h3>
+          <p>Campañas en Google, Meta y TikTok optimizadas por datos, no por intuición. Cada euro invertido se mide y se justifica.</p>
+          <div class="tag-list"><span>Google Ads</span><span>Meta Ads</span><span>Retargeting</span></div>
+        </div>
+
+        <div class="service-card" data-animate>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Diseño &amp; Desarrollo Web</h3>
+          <p>Sitios y landing pages rápidas, responsive y construidas para convertir visitas en leads, con SEO on-page desde el día uno.</p>
+          <div class="tag-list"><span>UX/UI</span><span>Landing pages</span><span>CRO</span></div>
+        </div>
+
+        <div class="service-card" data-animate>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+          <h3>Redes Sociales</h3>
+          <p>Estrategia de contenido y comunidad para marcas que quieren algo más que "likes": conversación real con su audiencia.</p>
+          <div class="tag-list"><span>Calendario editorial</span><span>Community</span><span>Reels &amp; formatos</span></div>
+        </div>
+
+        <div class="service-card" data-animate>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>Email &amp; Automatización</h3>
+          <p>Flujos automatizados que nutren leads y recuperan carritos, para que el equipo comercial reciba clientes ya calientes.</p>
+          <div class="tag-list"><span>CRM</span><span>Lead nurturing</span><span>Automations</span></div>
+        </div>
+
+        <div class="service-card" data-animate>
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 15l4-6 4 3 5-8"/></svg></div>
+          <h3>Analítica &amp; Reporting</h3>
+          <p>Dashboards claros, sin jerga. Sabes exactamente en qué se invierte tu presupuesto y qué retorno está generando.</p>
+          <div class="tag-list"><span>GA4</span><span>Dashboards</span><span>Informes mensuales</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="pad process" id="proceso">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2>Un proceso simple, sin sorpresas</h2>
+        <p>Transparencia de principio a fin. Sabes qué esperar en cada fase del proyecto.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step" data-animate><span class="num">01</span><h3>Diagnóstico</h3><p>Auditamos tu presencia digital actual y detectamos oportunidades reales de crecimiento.</p><div class="process-line"></div></div>
+        <div class="process-step" data-animate><span class="num">02</span><h3>Estrategia</h3><p>Diseñamos un plan a medida con objetivos, canales y KPIs claros desde el primer mes.</p><div class="process-line"></div></div>
+        <div class="process-step" data-animate><span class="num">03</span><h3>Ejecución</h3><p>Ponemos en marcha campañas, contenido y desarrollo con seguimiento semanal.</p><div class="process-line"></div></div>
+        <div class="process-step" data-animate><span class="num">04</span><h3>Optimización</h3><p>Analizamos resultados y ajustamos continuamente para maximizar el retorno.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="pad" id="casos">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <p class="eyebrow">Resultados reales</p>
+        <h2>Casos de éxito</h2>
+        <p>Una muestra de lo que conseguimos cuando estrategia, contenido y datos van en la misma dirección.</p>
+      </div>
+      <div class="cases-grid">
+
+        <div class="case-card" data-animate>
+          <div class="case-thumb" style="background:linear-gradient(135deg,#1d4ed8,#3667d6);">
+            <span class="tag">E-commerce</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>
+          </div>
+          <div class="case-body">
+            <h3>Lumen Store</h3>
+            <p>Rediseño web + SEO técnico para una tienda de iluminación con tráfico estancado.</p>
+            <div class="case-stats">
+              <div><strong>+186%</strong><span>Tráfico orgánico</span></div>
+              <div><strong>+92%</strong><span>Ventas online</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card" data-animate>
+          <div class="case-thumb" style="background:linear-gradient(135deg,#b8860b,#e8c766);">
+            <span class="tag">SaaS B2B</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M8 8h8M8 16h5"/></svg>
+          </div>
+          <div class="case-body">
+            <h3>Nortia CRM</h3>
+            <p>Estrategia de contenido + Ads B2B para reducir el coste por lead cualificado.</p>
+            <div class="case-stats">
+              <div><strong>-47%</strong><span>Coste por lead</span></div>
+              <div><strong>+214%</strong><span>Leads cualificados</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="case-card" data-animate>
+          <div class="case-thumb" style="background:linear-gradient(135deg,#0d2c66,#1d4ed8);">
+            <span class="tag">Retail físico</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M3 9l1-5h16l1 5M4 9h16v10H4z"/></svg>
+          </div>
+          <div class="case-body">
+            <h3>Bruma Café</h3>
+            <p>Redes sociales y campañas locales para aumentar el flujo de clientes en tienda.</p>
+            <div class="case-stats">
+              <div><strong>+63%</strong><span>Visitas en tienda</span></div>
+              <div><strong>x3</strong><span>Comunidad en Instagram</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAND -->
+  <section class="pad" style="padding-top:0;">
+    <div class="container">
+      <div class="stats-band" data-animate>
+        <div><strong>+120</strong><span>Proyectos entregados</span></div>
+        <div><strong>€4.2M</strong><span>Presupuesto publicitario gestionado</span></div>
+        <div><strong>98%</strong><span>Clientes que renuevan</span></div>
+        <div><strong>7</strong><span>Años de experiencia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="pad">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <p class="eyebrow">Lo que dicen de nosotros</p>
+        <h2>Clientes que ya vieron el cambio</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-animate>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"En cuatro meses duplicamos el tráfico orgánico y, lo más importante, empezamos a vender de verdad a través de la web."</p>
+          <div class="testimonial-author"><div class="avatar">MV</div><div><strong>Marta Vidal</strong><span>CEO, Lumen Store</span></div></div>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"El equipo entiende de negocio, no solo de marketing. Cada decisión estaba justificada con datos."</p>
+          <div class="testimonial-author"><div class="avatar">JR</div><div><strong>Javier Roldán</strong><span>Fundador, Nortia CRM</span></div></div>
+        </div>
+        <div class="testimonial-card" data-animate>
+          <div class="stars">★★★★★</div>
+          <p class="quote">"Nos ayudaron a conectar con nuestra comunidad de verdad. La tienda física lo notó desde el segundo mes."</p>
+          <div class="testimonial-author"><div class="avatar">SL</div><div><strong>Sofía Lara</strong><span>Directora, Bruma Café</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pad" id="precios">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <p class="eyebrow">Planes</p>
+        <h2>Un plan para cada etapa de crecimiento</h2>
+        <p>Sin permanencia forzosa. Ajustamos el plan a medida que tu negocio evoluciona.</p>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="price-card" data-animate>
+          <h3>Starter</h3>
+          <p class="desc">Para negocios que empiezan a construir su presencia digital.</p>
+          <div class="price">€590<span>/mes</span></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>SEO on-page básico</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>1 red social gestionada</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Informe mensual</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Soporte por email</li>
+          </ul>
+          <a href="#contacto" class="btn btn-ghost">Empezar</a>
+        </div>
+
+        <div class="price-card featured" data-animate>
+          <h3>Growth</h3>
+          <p class="desc">El más elegido por pymes en fase de crecimiento activo.</p>
+          <div class="price">€1.290<span>/mes</span></div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>SEO técnico + contenido</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Google Ads + Meta Ads</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>3 redes sociales gestionadas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Dashboard en tiempo real</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Reunión quincenal</li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary">Empezar</a>
+        </div>
+
+        <div class="price-card" data-animate>
+          <h3>Scale</h3>
+          <p class="desc">Para marcas con presupuesto de medios relevante y equipos propios.</p>
+          <div class="price">A medida</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Estrategia multicanal completa</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Automatización &amp; CRM</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Equipo dedicado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Reporting semanal</li>
+          </ul>
+          <a href="#contacto" class="btn btn-ghost">Hablar con ventas</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="pad" id="faq">
+    <div class="container">
+      <div class="section-head" data-animate>
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Todo lo que quieres saber antes de empezar</h2>
+      </div>
+      <div class="faq-list" data-animate>
+        <div class="faq-item">
+          <div class="faq-q">¿En cuánto tiempo veré resultados?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          <div class="faq-a"><p>En publicidad de pago, entre 2 y 4 semanas. En SEO, los primeros movimientos suelen verse a partir del segundo o tercer mes, con crecimiento sostenido a partir del sexto.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Hay permanencia mínima?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          <div class="faq-a"><p>No. Trabajamos con contratos mensuales. Creemos que los resultados deben ser lo que te haga quedarte, no una cláusula de permanencia.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Trabajáis con negocios pequeños o solo grandes marcas?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          <div class="faq-a"><p>Trabajamos con negocios de todos los tamaños. El plan Starter está pensado específicamente para pymes que están dando sus primeros pasos en digital.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">¿Cómo mido el retorno de la inversión?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+          <div class="faq-a"><p>Cada cliente tiene acceso a un dashboard en tiempo real con las métricas clave del negocio: tráfico, leads, coste por adquisición y ventas atribuidas.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="pad" id="contacto">
+    <div class="container">
+      <div class="cta-section" data-animate>
+        <p class="eyebrow" style="justify-content:center;">Empecemos</p>
+        <h2>¿Listo para hacer crecer tu negocio de verdad?</h2>
+        <p>Agenda una llamada de 30 minutos, sin compromiso. Analizamos tu situación actual y te decimos con honestidad si podemos ayudarte.</p>
+        <div class="cta-actions">
+          <a href="mailto:hola@apolodigital.agency" class="btn btn-primary">Solicitar diagnóstico gratuito</a>
+          <a href="tel:+34900000000" class="btn btn-ghost">Llamar ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="logo-mark">A</span>Apolo Digital</a>
+        <p>Agencia de marketing digital enfocada en resultados medibles: SEO, publicidad, contenido y desarrollo web trabajando como un solo equipo.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4a2 2 0 014 0v4M11 13V10"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">SEO &amp; Contenido</a></li>
+          <li><a href="#servicios">Publicidad de pago</a></li>
+          <li><a href="#servicios">Diseño web</a></li>
+          <li><a href="#servicios">Redes sociales</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Agencia</h4>
+        <ul>
+          <li><a href="#casos">Casos de éxito</a></li>
+          <li><a href="#precios">Planes</a></li>
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@apolodigital.agency">hola@apolodigital.agency</a></li>
+          <li><a href="tel:+34900000000">+34 900 000 000</a></li>
+          <li><a href="#">Madrid, España</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Apolo Digital. Todos los derechos reservados.</span>
+      <span>Proyecto de portfolio diseñado y maquetado por Apolo — Diseñador Web</span>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+  // Mobile nav toggle
+  const burger = document.querySelector('.burger');
+  const navLinks = document.querySelector('.nav-links');
+  burger.addEventListener('click', () => {
+    const open = navLinks.style.display === 'flex';
+    navLinks.style.display = open ? 'none' : 'flex';
+    navLinks.style.cssText += 'position:fixed; top:64px; left:0; right:0; background:#12121f; flex-direction:column; padding:24px; gap:20px; border-bottom:1px solid rgba(255,255,255,0.08);';
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-q').addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in-view'); observer.unobserve(e.target); } });
+  }, {threshold:0.12});
+  document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+  // Scroll-to-top button
+  const scrollBtn = document.querySelector('.scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('show', window.scrollY > 500);
+  });
+  scrollBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+
+</body>
+</html>
